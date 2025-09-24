@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario con Validación</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <form id="formulario">
+    <h2>Registro</h2>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" maxlength="50" required></textarea>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" required>
+
+    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fechaNacimiento" required>
+
+    <label>
+      <input type="checkbox" id="condiciones"> Acepto las condiciones del servicio
+    </label>
+
+    <button type="submit">Enviar</button>
+    <p id="resultadoEdad"></p>
+    <p id="errores"></p>
+  </form>
+
+  <script src="validar.js"></script>
+</body>
+</html>

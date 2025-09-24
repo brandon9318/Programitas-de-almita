@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Algoritmos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Calculadora de Calificación Final</h1>
+  <form id="formulario">
+    <label>Nombre: <input type="text" id="nombre" required></label><br>
+    <label>Email: <input type="email" id="email" required></label><br>
+    <label>Comentarios: <textarea id="comentarios" maxlength="50" required></textarea></label><br>
+    <label>Password: <input type="password" id="password" required></label><br>
+    <label><input type="checkbox" id="condiciones"> Acepto las condiciones del servicio</label><br><br>
+
+    <h2>Calificaciones</h2>
+    <label>Parcial 1: <input type="number" id="p1" min="0" max="10"></label><br>
+    <label>Parcial 2: <input type="number" id="p2" min="0" max="10"></label><br>
+    <label>Parcial 3: <input type="number" id="p3" min="0" max="10"></label><br>
+    <label>Examen Final: <input type="number" id="examen" min="0" max="10"></label><br>
+    <label>Trabajo Final: <input type="number" id="trabajo" min="0" max="10"></label><br><br>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <p id="resultado"></p>
+
+  <script src="validar.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario y Horas Extras</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Formulario de Validación</h1>
+  <form id="miFormulario">
+    <label>Nombre: <input type="text" id="nombre" required></label>
+    <label>Email: <input type="email" id="email" required></label>
+    <label>Comentarios: <textarea id="comentarios" maxlength="50" required></textarea></label>
+    <label>Password: <input type="password" id="password" required></label>
+    <label><input type="checkbox" id="condiciones"> Acepto las condiciones del servicio</label>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Cálculo de Horas Extras</h2>
+  <label>Horas trabajadas: <input type="number" id="horasTrabajadas"></label>
+  <label>Pago por hora normal: <input type="number" id="pagoHora"></label>
+  <button onclick="calcularHorasExtras()">Calcular Pago</button>
+  <p id="resultadoPago"></p>
+<script src="validar.js"></script>
+</body>
+</html>

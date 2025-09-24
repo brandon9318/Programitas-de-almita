@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario y Ejercicio JS</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Formulario de Validación</h1>
+  <form id="miFormulario">
+    <label>Nombre: <input type="text" id="nombre" required></label><br>
+    <label>Email: <input type="email" id="email" required></label><br>
+    <label>Comentarios: <textarea id="comentarios" maxlength="50" required></textarea></label><br>
+    <label>Password: <input type="password" id="password" required></label><br>
+    <label><input type="checkbox" id="condiciones"> Acepto las condiciones del servicio</label><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Ejercicio: palabrasANumeros</h2>
+  <p>Escribe palabras como "uno", "dos", etc. separadas por comas:</p>
+  <input type="text" id="entradaPalabras">
+  <button onclick="ejecutarConversion()">Convertir</button>
+  <p id="resultadoPalabras"></p>
+
+  <script src="validar.js"></script>
+</body>
+</html>

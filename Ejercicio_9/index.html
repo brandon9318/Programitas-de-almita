@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario y DNI</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+  <form id="registroForm">
+    <label>Nombre: <input type="text" id="nombre" required></label>
+    <label>Email: <input type="email" id="email" required></label>
+    <label>Comentarios: <textarea id="comentarios" maxlength="50" required></textarea></label>
+    <label>Password: <input type="password" id="password" required></label>
+    <label>DNI (solo número): <input type="number" id="dniNumero" required></label>
+    <label><input type="checkbox" id="condiciones"> Acepto las condiciones del servicio</label>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>🆔 Letra del DNI</h2>
+  <button onclick="mostrarLetraDNI()">Calcular Letra</button>
+  <p id="letraDNI"></p>
+
+ <script src="validar.js"></script>
+</body>
+</html>
